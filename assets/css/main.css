@@ -62,7 +62,7 @@ img {
 }
 .underline {
   text-decoration: underline;
-  text-decoration-thickness: 0.1em;
+  text-decoration-thickness: 0.075em;
   text-underline-offset: 0.1em;
 }
 .text-green {
@@ -705,6 +705,7 @@ strong,
 .introducing {
   position: relative;
   margin-top: 130px;
+  padding-bottom: 106px;
 }
 .introducing__bg {
   position: absolute;
@@ -803,7 +804,7 @@ strong,
   line-height: 1.54;
   max-width: 85%;
   letter-spacing: 0.006em;
-  margin: 0 auto 20px;
+  margin: 0 auto 19px;
 }
 
 /* ====================== Ownership Section =============== */
@@ -841,7 +842,7 @@ strong,
   font-size: 1.625rem;
   font-weight: 500;
   line-height: 1.54;
-  margin-top: 38px;
+  margin-top: 40px;
   letter-spacing: 0.01em;
 }
 
@@ -885,44 +886,392 @@ strong,
 
 .ownership__details {
   display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
-  margin-top: 2rem;
+  gap: 28px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 72px;
+}
+.ownership__details > * {
+  flex: 1;
+  max-width: 50%;
 }
 
 .ownership__text {
-  max-width: 400px;
   text-align: left;
+  line-height: 1.54;
+  max-width: 48%;
 }
 
 .ownership__text p {
-  margin-bottom: 1rem;
+  margin-bottom: 18px;
+  line-height: 1.53;
+  letter-spacing: 0.02em;
 }
 
 .ownership__paragraph--red {
-  color: #e53935;
+  color: #da6156;
   font-weight: bold;
 }
-
-.ownership__highlight--italic {
-  font-style: italic;
+/* ==================== Branchify Section ================ */
+.branchify {
+  margin-top: 88px;
+}
+.branchify__cta {
+  letter-spacing: 0.02em;
 }
 
-.ownership__link {
-  color: #1e88e5;
-  text-decoration: none;
+.branchify__title {
+  text-align: center;
+  font-size: 3.875rem;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: 0.01em;
+  max-width: 50rem;
+  margin: 100px auto 0;
+}
+.branchify__image {
+  text-align: center;
+  margin-top: 78px;
 }
 
-.ownership__link:hover {
-  text-decoration: underline;
+.branchify__title-highlight {
+  color: #db6157;
 }
 
-.ownership__image img {
-  max-width: 100%;
-  border-radius: 4px;
+.branchify__description {
+  font-size: 1.625rem;
+  font-weight: 500;
+  line-height: 1.54;
+  margin-top: 122px;
+  letter-spacing: 0.01em;
 }
 
+.branchify__features,
+.branchify__use-cases {
+  margin: 40px 0 0;
+}
+
+.branchify__features-title,
+.branchify__use-cases-title {
+  font-size: 2.25rem;
+  font-weight: 600;
+  line-height: 1.11;
+  letter-spacing: 0.03em;
+  margin-top: 63px;
+}
+
+.branchify__features-list,
+.branchify__use-cases-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 29px;
+}
+.branchify__features-list li,
+.branchify__use-cases-list li {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 1.625rem;
+  font-weight: 500;
+  line-height: 1.77;
+  letter-spacing: 0.01em;
+  margin-bottom: 18px;
+}
+.branchify__use-cases-list li {
+  gap: 29px;
+  line-height: 1.54;
+}
+
+.branchify__features-list li::before {
+  content: '';
+  width: 35px;
+  height: 35px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url('../images/skill-icons_rocket.svg');
+}
+.branchify__use-cases-list li::before {
+  content: '';
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url('../images/check_circle.svg');
+}
+.branchify__market {
+  margin-top: 82px;
+}
+.branchify__market p {
+  font-size: 1.625rem;
+  font-weight: 500;
+  margin-top: 22px;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+}
+.branchify__market h2 {
+  font-size: 2.625rem;
+  font-weight: 600;
+  line-height: 1.52;
+  letter-spacing: 0.02em;
+}
+.branchify__competitor {
+  margin-top: 66px;
+}
+.branchify__competitor h2 {
+  font-size: 2.625rem;
+  font-weight: 600;
+  line-height: 1.52;
+  letter-spacing: 0.02em;
+}
+.branchify__competitor p {
+  font-size: 1.625rem;
+  font-weight: 500;
+  line-height: 1.54;
+  margin-top: 18px;
+  letter-spacing: 0.01em;
+}
+.branchify__unique {
+  margin-top: 44px;
+}
+.branchify__unique h2 {
+  font-size: 2.625rem;
+  font-weight: 600;
+  line-height: 1.52;
+  letter-spacing: 0.02em;
+}
+.branchify__unique p {
+  font-size: 1.625rem;
+  font-weight: 500;
+  line-height: 1.54;
+  margin-top: 18px;
+  letter-spacing: 0.01em;
+}
+.branchify__foryou {
+  margin-top: 64px;
+}
+.branchify__foryou h2 {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 2.625rem;
+  font-weight: 700;
+  line-height: 1.05;
+  text-align: center;
+  letter-spacing: 0.045em;
+}
+.branchify__foryou h3 {
+  color: #da6156;
+  font-family: 'Nunito', sans-serif;
+  font-size: 2.625rem;
+  font-weight: 700;
+  line-height: 1.52;
+  margin-top: 20px;
+  letter-spacing: 0;
+}
+.branchify__foryou p {
+  font-size: 1.625rem;
+  font-weight: 500;
+  line-height: 1.54;
+  margin-top: 18px;
+  letter-spacing: 0.01em;
+}
+.branchify__foryou .cta {
+  letter-spacing: 0.02em;
+  margin-top: 95px;
+  padding: 1.9rem 11rem 2.4rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+}
+/* ===================== Software Kit Section =================== */
+.softkit {
+  margin-top: 64px;
+}
+
+.softkit__heading {
+  text-align: center;
+  font-size: 3.875rem;
+  font-weight: 400;
+  line-height: 1.11;
+  letter-spacing: 0.03em;
+}
+
+.softkit__highlight {
+  font-weight: 800;
+  letter-spacing: 0.01em;
+}
+.softkit__item {
+  border: 2px solid #da6156;
+  margin-top: 66px;
+}
+
+.softkit__item-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding-top: 38px;
+  padding-left: 52px;
+  padding: 38px 52px 52px;
+  min-height: 456px;
+}
+
+.softkit__item-title {
+  font-family: 'Nunito', sans-serif;
+  font-size: 2.625rem;
+  font-weight: 800;
+  line-height: 1.64;
+  letter-spacing: -0.01em;
+  color: #fff;
+  background: #da6156;
+  padding: 25px 52px 24px;
+}
+.softkit__item-text {
+  flex: 1;
+  max-width: 59%;
+  margin-right: -50px;
+}
+.softkit__item--video .softkit__item-text {
+  max-width: 50%;
+}
+.softkit__item-text p {
+  font-size: 1.625rem;
+  font-weight: 500;
+  line-height: 1.54;
+  letter-spacing: 0.01em;
+  margin-bottom: 18px;
+}
+
+.softkit__item-image {
+  width: 32%;
+  text-align: center;
+}
+.softkit__item--sourcecode .softkit__item-image {
+  margin-bottom: -38px;
+}
+.softkit__item--softcopy .softkit__item-image {
+  width: 44%;
+  margin-right: -35px;
+  margin-top: -14px;
+  margin-bottom: -52px;
+}
+.softkit__item--funnel .softkit__item-image {
+  width: 46%;
+  margin-right: -30px;
+  margin-bottom: -30px;
+}
+.softkit__item--video .softkit__item-image {
+  width: 47%;
+  margin-top: 26px;
+  margin-right: -12px;
+}
+/* ====================== Bonus Section ===================*/
+/* Bonuses Section */
+.bonuses {
+  margin-top: 40px;
+}
+
+.bonuses__heading {
+  text-align: center;
+  font-size: 3.875rem;
+  font-weight: 600;
+  line-height: 4.3125rem;
+  letter-spacing: 0.02em;
+  margin: 84px auto 0;
+  max-width: 55rem;
+}
+
+.bonuses__highlight {
+  font-weight: 800;
+  color: #da6156;
+}
+
+.bonuses__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 50px 40px;
+  max-width: 1092px;
+  margin: 134px auto 0;
+}
+
+.bonuses__item {
+  flex: 1;
+  border: 2px solid #da6156;
+  background: #fff9f9;
+  padding: 0 36px 50px;
+  text-align: center;
+  flex: 1 0 calc(50% - 20px);
+  max-width: calc(50% - 20px);
+}
+
+.bonuses__item-header {
+  color: #fff;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  padding: 0.85em 1rem;
+  background: #da6156;
+  width: fit-content;
+  margin: -1.45em auto 0;
+  line-height: 1;
+}
+
+.bonuses__item-content {
+  margin-top: 16px;
+  text-align: left;
+}
+.promo-email-img {
+  margin-top: -7.56%;
+  margin-bottom: -12%;
+}
+.facebook-ads-img {
+  margin-bottom: -11%;
+}
+
+.facebook-ads-img {
+}
+.promo-reels-img {
+  margin-bottom: -4.5%;
+}
+
+.bonuses__item-title {
+  font-size: 2.625rem;
+  line-height: 1.31;
+  letter-spacing: 0;
+  margin-top: 18px;
+}
+.bonuses__item-description {
+  margin-top: 22px;
+}
+.bonuses__item-description p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  letter-spacing: 0;
+  margin-right: 3px;
+}
+.bonuses__item-description p:last-child {
+  margin-bottom: 0;
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+  .software-kit__item,
+  .bonuses__list {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .software-kit__item-image img,
+  .bonuses__item-image {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+}
 /* ==================== Facts Section =================== */
 .facts {
   max-width: 71.875rem;
