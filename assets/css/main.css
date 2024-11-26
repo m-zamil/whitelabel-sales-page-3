@@ -1837,7 +1837,7 @@ strong,
   .pricing__cards {
     display: grid;
     grid-auto-rows: 1fr;
-    gap: 3rem;
+    gap: 5rem;
   }
   .pricing__card {
     width: 100%;
@@ -1878,6 +1878,9 @@ strong,
   }
   .pricing__kit-cta {
     font-size: 1.5rem;
+  }
+  .best-offer__tag {
+    margin-top: -2.5rem;
   }
 }
 /*================= Guarantee ==============*/
