@@ -25,7 +25,7 @@
         <h2 class="intro__subheadline"> Easily Rebrand The Software as Your Own, Sell it at ANY Price You Want, and Start Making Serious Money TODAY </h2>
         <div class="video__wrapper">
           <div class="video__tag">No Technical Experience or Marketing Skills Needed <span class="semi-bold">— EVERYTHING IS DONE FOR YOU!</span></div>
-          <video controls poster="./assets/images/poster.jpg" id="video">
+          <video preload="none" controls poster="./assets/images/poster.webp" id="video">
             <source src="./assets/images/big_buck_bunny_720p_1mb.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
@@ -45,8 +45,13 @@
               Unstoppable flow of <br />
               sales <span class="underline">every single day</span>
             </p>
-            <img src="./assets/images/arrow-left.svg" alt="Left arrow" class="dashboard__arrow dashboard__arrow--left" />
-            <img src="./assets/images/dashboard-image1.jpg" alt="Sales data" class="dashboard__image" />
+            <img src="./assets/images/arrow-left.svg" alt="Left arrow" loading="lazy" class="dashboard__arrow dashboard__arrow--left" />
+
+            <picture>
+              <source srcset="./assets/images/dashboard-image1.webp 1x, ./assets/images/dashboard-image1-2x.webp 2x" type="image/webp" />
+              <source srcset="./assets/images/dashboard-image1.jpg 1x, ./assets/images/dashboard-image1-2x.jpg 2x" type="image/jpeg" />
+              <img src="./assets/images/dashboard-image1.jpg" loading="lazy" alt="Sales data" class="dashboard__image" />
+            </picture>
           </div>
           <div class="dashboard__right">
             <p class="dashboard__tagline tagline--right">
@@ -54,13 +59,21 @@
               generated selling software <br />
               on auto-pilot
             </p>
-            <img src="./assets/images/arrow-right.svg" alt="Right arrow" class="dashboard__arrow dashboard__arrow--right" />
-            <img src="./assets/images/dashboard-image2.jpg" alt="Revenue details August" class="dashboard__image" />
+            <img src="./assets/images/arrow-right.svg" loading="lazy" alt="Right arrow" class="dashboard__arrow dashboard__arrow--right" />
+            <picture>
+              <source srcset="./assets/images/dashboard-image2.webp 1x, ./assets/images/dashboard-image2-2x.webp 2x" type="image/webp" />
+              <source srcset="./assets/images/dashboard-image2.jpg 1x, ./assets/images/dashboard-image2-2x.jpg 2x" type="image/jpeg" />
+              <img src="./assets/images/dashboard-image2.jpg" loading="lazy" alt="Revenue details August" class="dashboard__image" />
+            </picture>
           </div>
           <div class="dashboard__bottom">
             <p class="dashboard__tagline tagline--bottom"><span>Over $159K+ </span><br />software sales in October</p>
-            <img src="./assets/images/arrow-bottom.svg" alt="Bottom arrow" class="dashboard__arrow dashboard__arrow--bottom" />
-            <img src="./assets/images/dashboard-image3.jpg" alt="Revenue details October" class="dashboard__image" />
+            <img src="./assets/images/arrow-bottom.svg" loading="lazy" alt="Bottom arrow" class="dashboard__arrow dashboard__arrow--bottom" />
+            <picture>
+              <source srcset="./assets/images/dashboard-image3.webp 1x, ./assets/images/dashboard-image3-2x.webp 2x" type="image/webp" />
+              <source srcset="./assets/images/dashboard-image3.jpg 1x, ./assets/images/dashboard-image3-2x.jpg 2x" type="image/jpeg" />
+              <img src="./assets/images/dashboard-image3.jpg" loading="lazy" alt="Revenue details October" class="dashboard__image" />
+            </picture>
           </div>
         </div>
         <div class="testimonials">
@@ -89,7 +102,12 @@
         <h1 class="promo__title"> Selling software is the <span class="promo__highlight">“Low-Hanging Fruit”</span> for Making Money Online Right Now </h1>
         <div class="promo__container">
           <p class="promo__description"> And <span class="underline">you can do it with zero experience & no programming skills</span> using our done-for-you software system. </p>
-          <img src="./assets/images/orange-tree.jpg" alt="Orange tree" class="promo__image" />
+          <picture>
+            <source srcset="./assets/images/orange-tree.webp 1x, ./assets/images/orange-tree-2x.webp 2x" type="image/webp" />
+            <source srcset="./assets/images/orange-tree.jpg 1x, ./assets/images/orange-tree-2x.jpg 2x" type="image/jpeg" />
+            <img src="./assets/images/orange-tree.jpg" loading="lazy" alt="Orange tree" class="promo__image" />
+          </picture>
+
           <p class="promo__text"> Software is a Multi-Trillion Dollar Industry! It’s Creating Millionaires Faster than Any Other Business. </p><p class="promo__text"> There are gazillions of low-hanging and low-code software ideas you can copy right now, build quickly, and have thousands of people begging you to take their money. </p>
           <p class="promo__text"> The global SaaS and software market is worth over <span class="bold">$4 TrillionF</span> and it’s projected to reach a staggering <span class="bold">$6 trillion</span> by 2027. That’s a goldmine of opportunity just waiting to be tapped. </p>
           <p class="promo__text"> Compared to other business models, software marketing comes with insanely high-profit margins, you build once and keep selling it forever. </p>
@@ -97,7 +115,11 @@
           <h3 class="promo__check-title">Check this out…</h3>
           <p class="promo__text"> A simple AI software that cost a little bit less than $31,000 to build (it’s basically an API wrapper) and generated over 94,000 dollars in sales in the first 30 days. </p>
 
-          <img src="./assets/images/net-rev-fastspring.jpg" alt="Dashboard stats" class="promo__stats-image" />
+          <picture>
+            <source srcset="./assets/images/net-rev-fastspring.webp 1x, ./assets/images/net-rev-fastspring-2x.webp 2x" type="image/webp" />
+            <source srcset="./assets/images/net-rev-fastspring.jpg 1x, ./assets/images/net-rev-fastspring-2x.jpg 2x" type="image/jpeg" />
+            <img src="./assets/images/net-rev-fastspring.jpg" loading="lazy" alt="Dashboard stats" class="promo__stats-image" />
+          </picture>
 
           <p class="promo__text"> That’s over <strong>300% (3X)</strong> Return in the first <strong>30 days alone.</strong></p>
           <p class="promo__text"> We’ll keep selling this software and making serious money month after month, in the first year we could be looking at a <strong>20X</strong> return or even more. </p>
@@ -118,7 +140,11 @@
 
         <!-- Image Section -->
         <div class="launch__image-container">
-          <img src="./assets/images/keyboard-money-check.jpg" alt="Keyboard, Money, and Check" class="launch__image" />
+          <picture>
+            <source srcset="./assets/images/keyboard-money-check.webp 1x, ./assets/images/keyboard-money-check-2x.webp 2x" type="image/webp" />
+            <source srcset="./assets/images/keyboard-money-check.jpg 1x, ./assets/images/keyboard-money-check-2x.jpg 2x" type="image/jpeg" />
+            <img src="./assets/images/keyboard-money-check.jpg" loading="lazy" alt="Keyboard, Money, and Check" class="launch__image" />
+          </picture>
         </div>
 
         <!-- Problem Section -->
@@ -145,7 +171,11 @@
               </div>
             </div>
             <div class="launch__choices-image">
-              <img src="./assets/images/man.jpg" alt="frustrated-anxious-man-hold-hands-head-grimacing-bothered" />
+              <picture>
+                <source srcset="./assets/images/man.webp 1x, ./assets/images/man-2x.webp 2x" type="image/webp" />
+                <source srcset="./assets/images/man.jpg 1x, ./assets/images/man-2x.jpg 2x" type="image/jpeg" />
+                <img src="./assets/images/man.jpg" loading="lazy" alt="frustrated-anxious-man-hold-hands-head-grimacing-bothered" />
+              </picture>
             </div>
           </div>
         </div>
@@ -155,10 +185,7 @@
           <h2 class="launch__solution-title"> But, There’s <span class="launch__solution-highlight">A Third Option</span> </h2>
           <p class="launch__solution-description">
             And This One Works Predictably
-            <span class="underline">
-              100% Of The Time <br />
-              Without Putting You in Debt or Wasting Months
-            </span>
+            <span class="underline"> 100% Of The Time Without Putting You in Debt or Wasting Months </span>
           </p>
           <p class="launch__solution-subtitle">
             You <span class="launch__solution-legal">LEGALLY</span> Steal Our Software & Sell It As Your Own <br />
@@ -202,7 +229,11 @@
             <p class="showcase__tagline">Interactive Video Creator Software</p>
           </div>
           <div class="showcase__image-container">
-            <img src="./assets/images/DFY-Kit.png" alt="DFY Kit" class="showcase__image" />
+            <picture>
+              <source srcset="./assets/images/DFY-Kit.webp 1x, ./assets/images/DFY-Kit-2x.webp 2x" type="image/webp" />
+              <source srcset="./assets/images/DFY-Kit.png 1x, ./assets/images/DFY-Kit-2x.png 2x" type="image/png" />
+              <img src="./assets/images/DFY-Kit.png" loading="lazy" alt="DFY Kit" class="showcase__image" />
+            </picture>
           </div>
         </section>
         <section class="features">
@@ -251,12 +282,19 @@
                 <p class="ownership__paragraph--red">You can customize it</p>
               </div>
               <div class="ownership__image">
-                <img src="./assets/images/team-meeting.jpg" alt="Team working together" />
+                <picture>
+                  <source srcset="./assets/images/team-meeting.webp 1x, ./assets/images/team-meeting-2x.webp 2x" type="image/webp" />
+                  <source srcset="./assets/images/team-meeting.jpg 1x, ./assets/images/team-meeting-2x.jpg 2x" type="image/jpeg" />
+                  <img src="./assets/images/team-meeting.jpg" loading="lazy" alt="Team working together" />
+                </picture>
               </div>
             </div>
           </div>
         </section>
-        <img src="./assets/images/introducing-bg.jpg" loading="lazy" alt="" class="introducing__bg" />
+        <picture>
+          <source srcset="./assets/images/introducing-bg.webp 1x" type="image/webp" />
+          <img src="./assets/images/introducing-bg.jpg" loading="lazy" alt="" class="introducing__bg" />
+        </picture>
       </div>
       <section class="branchify">
         <div class="branchify__cta">
@@ -265,7 +303,11 @@
         <div class="branchify__content">
           <h1 class="branchify__title"> Why You Should Own <span class="branchify__title-highlight">Branchify App</span> Whitelabel Right Now. </h1>
           <div class="branchify__image">
-            <img src="./assets/images/branchify.png" alt="" />
+            <picture>
+              <source srcset="./assets/images/branchify.webp 1x, ./assets/images/branchify-2x.webp 2x" type="image/webp" />
+              <source srcset="./assets/images/branchify.png 1x, ./assets/images/branchify-2x.png 2x" type="image/png" />
+              <img src="./assets/images/branchify.png" srcset="./assets/images/branchify.png 1x, ./assets/images/branchify-2x.png 2x" loading="lazy" alt="" />
+            </picture>
           </div>
           <p class="branchify__description"> Branchify is an interactive video creator software that allows anyone to add quizzes, hotspots, and branching scenarios to their videos. Ask the viewers questions, allow them to make their choices, and choose their own adventure. Based on the viewer's choices, the video automatically branches to the next video personalizing the experience for the viewer. </p>
 
@@ -332,7 +374,11 @@
               <p class=""> You’ll get a full white-label license to our <strong>Branchify software</strong> so you customize the software with your branding, host it on your server, <strong>connect your Stripe</strong> (or your preferred payment processor), and begin selling. </p>
             </div>
             <div class="softkit__item-image">
-              <img src="./assets/images/whitelabel-license.png" alt="Branchify App Whitelabel License" />
+              <picture>
+                <source srcset="./assets/images/whitelabel-license.webp 1x, ./assets/images/whitelabel-license-2x.webp 2x" type="image/webp" />
+                <source srcset="./assets/images/whitelabel-license.png 1x, ./assets/images/whitelabel-license-2x.png 2x" type="image/png" />
+                <img src="./assets/images/whitelabel-license.png" srcset="./assets/images/whitelabel-license.png 1x, ./assets/images/whitelabel-license-2x.png 2x" loading="lazy" alt="Branchify App Whitelabel License" />
+              </picture>
             </div>
           </div>
         </div>
@@ -344,7 +390,11 @@
               <p>We handover the entire <strong>sourcecode of the software</strong> to do you and you can use it as you wish. You can add or remove any feature you don’t like, you can change the look of your own software</p>
             </div>
             <div class="softkit__item-image">
-              <img src="./assets/images/source-code.png" alt="Full Sourcecode" />
+              <picture>
+                <source srcset="./assets/images/source-code.webp 1x, ./assets/images/source-code-2x.webp 2x" type="image/webp" />
+                <source srcset="./assets/images/source-code.png 1x, ./assets/images/source-code-2x.png 2x" type="image/png" />
+                <img src="./assets/images/source-code.png" srcset="./assets/images/source-code.png 1x, ./assets/images/source-code-2x.png 2x" loading="lazy" alt="Full Sourcecode" />
+              </picture>
             </div>
           </div>
         </div>
@@ -357,7 +407,7 @@
               <p>The sales copy is drafted in Google Docs so you can work with it easily.</p>
             </div>
             <div class="softkit__item-image">
-              <img src="./assets/images/sales-copy.svg" alt="Sales Copy" />
+              <img src="./assets/images/sales-copy.svg" loading="lazy" alt="Sales Copy" />
             </div>
           </div>
         </div>
@@ -369,7 +419,11 @@
               <p>Included are also the <strong>HTML files</strong> of the sales page so you can just upload them to your website, connect your payment processing, <strong>and begin selling.</strong></p>
             </div>
             <div class="softkit__item-image">
-              <img src="./assets/images/sales-funnel.png" alt="Sales Funnel" />
+              <picture>
+                <source srcset="./assets/images/sales-funnel.webp 1x, ./assets/images/sales-funnel-2x.webp 2x" type="image/webp" />
+                <source srcset="./assets/images/sales-funnel.png 1x, ./assets/images/sales-funnel-2x.png 2x" type="image/png" />
+                <img src="./assets/images/sales-funnel.png" srcset="./assets/images/sales-funnel.png 1x, ./assets/images/sales-funnel-2x.png 2x" loading="lazy" alt="Sales Funnel" />
+              </picture>
             </div>
           </div>
         </div>
@@ -382,7 +436,11 @@
               <p>Everything you need to convert visitors into paying <strong>customers done for you.</strong></p>
             </div>
             <div class="softkit__item-image">
-              <img src="./assets/images/sales-video.png" alt="Sales Funnel" />
+              <picture>
+                <source srcset="./assets/images/sales-video.webp 1x, ./assets/images/sales-video-2x.webp 2x" type="image/webp" />
+                <source srcset="./assets/images/sales-video.png 1x, ./assets/images/sales-video-2x.png 2x" type="image/png" />
+                <img src="./assets/images/sales-video.png" srcset="./assets/images/sales-video.png 1x, ./assets/images/sales-video-2x.png 2x" loading="lazy" alt="Sales Funnel" />
+              </picture>
             </div>
           </div>
         </div>
@@ -399,7 +457,11 @@
               </div>
               <div class="bonuses__item-content">
                 <div class="bonuses__item-image">
-                  <img src="./assets/images/promo-emails.png" alt="Promo Emails" class="promo-email-img" />
+                  <picture>
+                    <source srcset="./assets/images/promo-emails.webp 1x, ./assets/images/promo-emails-2x.webp 2x" type="image/webp" />
+                    <source srcset="./assets/images/promo-emails.png 1x, ./assets/images/promo-emails-2x.png 2x" type="image/png" />
+                    <img src="./assets/images/promo-emails.png" srcset="./assets/images/promo-emails.png 1x, ./assets/images/promo-emails-2x.png 2x" loading="lazy" alt="Promo Emails" class="promo-email-img" />
+                  </picture>
                 </div>
                 <h3 class="bonuses__item-title">Promo Emails</h3>
                 <div class="bonuses__item-description">
@@ -418,7 +480,11 @@
               </div>
               <div class="bonuses__item-content">
                 <div class="bonuses__item-image">
-                  <img src="./assets/images/facebook-ads.png" alt="Facebook and Instagram Ads" class="facebook-ads-img" />
+                  <picture>
+                    <source srcset="./assets/images/facebook-ads.webp 1x, ./assets/images/facebook-ads-2x.webp 2x" type="image/webp" />
+                    <source srcset="./assets/images/facebook-ads.png 1x, ./assets/images/facebook-ads-2x.png 2x" type="image/png" />
+                    <img src="./assets/images/facebook-ads.png" srcset="./assets/images/facebook-ads.png 1x, ./assets/images/facebook-ads-2x.png 2x" loading="lazy" alt="Facebook and Instagram Ads" class="facebook-ads-img" />
+                  </picture>
                 </div>
                 <h3 class="bonuses__item-title">Facebook & Instagram Ads</h3>
                 <div class="bonuses__item-description">
@@ -434,7 +500,11 @@
               </div>
               <div class="bonuses__item-content">
                 <div class="bonuses__item-image">
-                  <img src="./assets/images/hosting-guide.png" alt="Hosting Guide" class="promo-email-img" />
+                  <picture>
+                    <source srcset="./assets/images/hosting-guide.webp 1x, ./assets/images/hosting-guide-2x.webp 2x" type="image/webp" />
+                    <source srcset="./assets/images/hosting-guide.png 1x, ./assets/images/hosting-guide-2x.png 2x" type="image/png" />
+                    <img src="./assets/images/hosting-guide.png" srcset="./assets/images/hosting-guide.png 1x, ./assets/images/hosting-guide-2x.png 2x" loading="lazy" alt="Hosting Guide" class="promo-email-img" />
+                  </picture>
                 </div>
                 <h3 class="bonuses__item-title">App hosting video guide</h3>
                 <div class="bonuses__item-description">
@@ -450,7 +520,11 @@
               </div>
               <div class="bonuses__item-content">
                 <div class="bonuses__item-image">
-                  <img src="./assets/images/promo-reels.png" alt="Social media promo reels" class="promo-reels-img" />
+                  <picture>
+                    <source srcset="./assets/images/promo-reels.webp, ./assets/images/promo-reels-2x.webp 2x" type="image/webp" />
+                    <source srcset="./assets/images/promo-reels.png, ./assets/images/promo-reels-2x.png 2x" type="image/png" />
+                    <img src="./assets/images/promo-reels.png" loading="lazy" alt="Social media promo reels" class="promo-reels-img" />
+                  </picture>
                 </div>
                 <h3 class="bonuses__item-title">Social media promo reels</h3>
                 <div class="bonuses__item-description">
@@ -466,7 +540,11 @@
               </div>
               <div class="bonuses__item-content">
                 <div class="bonuses__item-image">
-                  <img src="./assets/images/french-launch-kit.png" alt="French launch kit" class="promo-email-img" />
+                  <picture>
+                    <source srcset="./assets/images/french-launch-kit.webp, ./assets/images/french-launch-kit-2x.webp 2x" type="image/webp" />
+                    <source srcset="./assets/images/french-launch-kit.png, ./assets/images/french-launch-kit-2x.png 2x" type="image/png" />
+                    <img src="./assets/images/french-launch-kit.png" loading="lazy" alt="French launch kit" class="promo-email-img" />
+                  </picture>
                 </div>
                 <h3 class="bonuses__item-title">French launch kit</h3>
                 <div class="bonuses__item-description">
@@ -481,7 +559,11 @@
               </div>
               <div class="bonuses__item-content">
                 <div class="bonuses__item-image">
-                  <img src="./assets/images/spanish-launch-kit.png" alt="Spanish launch kit" class="promo-email-img" />
+                  <picture>
+                    <source srcset="./assets/images/spanish-launch-kit.webp, ./assets/images/spanish-launch-kit-2x.webp 2x" type="image/webp" />
+                    <source srcset="./assets/images/spanish-launch-kit.png, ./assets/images/spanish-launch-kit-2x.png 2x" type="image/png" />
+                    <img src="./assets/images/spanish-launch-kit.png" loading="lazy" alt="Spanish launch kit" class="promo-email-img" />
+                  </picture>
                 </div>
                 <h3 class="bonuses__item-title">Spanish launch kit</h3>
                 <div class="bonuses__item-description">
@@ -559,13 +641,17 @@
           today <span class="underline">and launch your own software business in less than 24 hours.</span>
         </h2>
         <div class="started-pkg">
-          <img src="./assets/images/started-pkg.svg" alt="Started Licenses offer" class="started-pkg__img" />
+          <img src="./assets/images/started-pkg.svg" loading="lazy" alt="Started Licenses offer" class="started-pkg__img" />
         </div>
         <p class="started__price"><span>Price Today:</span> <span>$2,997 $997</span> <span>$497!</span></p>
         <div class="started__arrows"> <img src="./assets/images/mage_double-arrow-left.svg" alt="" /><img src="./assets/images/mage_double-arrow-left.svg" alt="" /><img src="./assets/images/mage_double-arrow-left.svg" alt="" /> </div>
         <p class="started__text">We have 2 options, choose the one the done for you package that your prefer.</p>
         <div class="started__image">
-          <img src="./assets/images/started-kit.png" alt="DFY Kit" />
+          <picture>
+            <source srcset="./assets/images/started-kit.webp, ./assets/images/started-kit-2x.webp 2x" type="image/webp" />
+            <source srcset="./assets/images/started-kit.png, ./assets/images/started-kit-2x.png 2x" type="image/png" />
+            <img src="./assets/images/started-kit.png" loading="lazy" alt="DFY Kit" />
+          </picture>
         </div>
       </section>
       <!-- Pricing Section ===================== -->
@@ -597,21 +683,21 @@
                   <a href="#" class="pricing__btn"><img src="./assets/images/access.svg" alt="" /> Get Access Now</a>
                   <div class="pricing__payment-footer">
                     <div class="pricing__payment-options">
-                      <img src="./assets/images/Vector.svg" alt="American Express" loading="lazy" class="pricing__payment-icon" />
-                      <img src="./assets/images/logos_visaelectron.svg" loading="lazy" alt="Visa Electron" class="pricing__payment-icon" />
-                      <img src="./assets/images/fontisto_mastercard.svg" loading="lazy" alt="MasterCard" class="pricing__payment-icon" />
-                      <img src="./assets/images/simple-line-icons_paypal.svg" loading="lazy" alt="Paypal" class="pricing__payment-icon" />
+                      <img src="./assets/images/Vector.svg" loading="lazy" alt="American Express" loading="lazy" class="pricing__payment-icon" />
+                      <img src="./assets/images/logos_visaelectron.svg" loading="lazy" loading="lazy" alt="Visa Electron" class="pricing__payment-icon" />
+                      <img src="./assets/images/fontisto_mastercard.svg" loading="lazy" loading="lazy" alt="MasterCard" class="pricing__payment-icon" />
+                      <img src="./assets/images/simple-line-icons_paypal.svg" loading="lazy" loading="lazy" alt="Paypal" class="pricing__payment-icon" />
                     </div>
                     <div class="pricing__payment-notes">
                       <div class="pricing__payment-note">
-                        <img src="./assets/images/iconamoon_certificate-badge-thin.svg" alt=" Secure Checkout" />
+                        <img src="./assets/images/iconamoon_certificate-badge-thin.svg" loading="lazy" alt=" Secure Checkout" />
                         <span>
                           100% Secure <br />
                           Order
                         </span>
                       </div>
                       <div class="pricing__payment-note">
-                        <img src="./assets/images/healthicons_ui-secure-outline.svg" alt="Money Back Guarantee" /><span>
+                        <img src="./assets/images/healthicons_ui-secure-outline.svg" loading="lazy" alt="Money Back Guarantee" /><span>
                           Money Back <br />
                           Guarantee
                         </span>
@@ -677,13 +763,13 @@
                     </div>
                     <div class="pricing__payment-notes">
                       <div class="pricing__payment-note"
-                        ><img src="./assets/images/iconamoon_certificate-badge-thin.svg" alt=" Secure Checkout" /><span
+                        ><img src="./assets/images/iconamoon_certificate-badge-thin.svg" loading="lazy" alt=" Secure Checkout" /><span
                           >100% Secure <br />
                           Order</span
                         ></div
                       >
                       <div class="pricing__payment-note"
-                        ><img src="./assets/images/healthicons_ui-secure-outline.svg" alt="Money Back Guarantee" /><span
+                        ><img src="./assets/images/healthicons_ui-secure-outline.svg" loading="lazy" alt="Money Back Guarantee" /><span
                           >Money Back <br />
                           Guarantee</span
                         ></div
@@ -722,7 +808,11 @@
         <h2 class="expect__headline">'Done-For-You <span class="highlight">Whitelabel Software'!</span></h2>
         <div class="expect__card-wrapper">
           <div class="expect__card">
-            <img src="./assets/images/before-kit.jpg" alt="" class="expect__card-img" />
+            <picture>
+              <source srcset="./assets/images/before-kit.webp, ./assets/images/before-kit-2x.webp 2x" type="image/webp" />
+              <source srcset="./assets/images/before-kit.jpg, ./assets/images/before-kit-2x.jpg 2x" type="image/jpeg" />
+              <img src="./assets/images/before-kit.jpg" loading="lazy" alt="" class="expect__card-img" />
+            </picture>
             <h3 class="expect__card-title expect__card-title--before">Before The Done-for-You Kit</h3>
             <ul class="expect__card-list expect__card-list--before">
               <li>Struggling to find cool software ideas</li>
@@ -736,7 +826,11 @@
             </ul>
           </div>
           <div class="expect__card">
-            <img src="./assets/images/after-kit.jpg" alt="" class="expect__card-img" />
+            <picture>
+              <source srcset="./assets/images/after-kit.webp, ./assets/images/after-kit-2x.webp 2x" type="image/webp" />
+              <source srcset="./assets/images/after-kit.jpg, ./assets/images/after-kit-2x.jpg 2x" type="image/jpeg" />
+              <img src="./assets/images/after-kit.jpg" loading="lazy" alt="" class="expect__card-img" />
+            </picture>
             <h3 class="expect__card-title expect__card-title--after">After The Done-for-You Kit</h3>
             <ul class="expect__card-list expect__card-list--after">
               <li>Get fully built software, deploy it on your hosting server, and customize your name, etc. within 24 hours</li>
@@ -764,7 +858,11 @@
             </div>
           </div>
           <div class="gladiator__image">
-            <img src="./assets/images/gladitaor-method.png" alt="" />
+            <picture>
+              <source srcset="./assets/images/gladitaor-method.webp, ./assets/images/gladitaor-method-2x.webp 2x" type="image/webp" />
+              <source srcset="./assets/images/gladitaor-method.png, ./assets/images/gladitaor-method-2x.png 2x" type="image/png" />
+              <img src="./assets/images/gladitaor-method.png" loading="lazy" alt="" />
+            </picture>
           </div>
         </div>
       </section>
@@ -902,7 +1000,11 @@
     <footer class="footer">
       <div class="footer__wrapper">
         <div class="footer__logo-wrapper">
-          <img src="./assets/images/footer-logo.png" alt="" class="footer__logo-img" />
+          <picture>
+            <source srcset="./assets/images/footer-logo.webp, ./assets/images/footer-logo-2x.webp 2x" type="image/webp" />
+            <source srcset="./assets/images/footer-logo.png, ./assets/images/footer-logo-2x.png 2x" type="image/png" />
+            <img src="./assets/images/footer-logo.png" alt="" class="footer__logo-img" />
+          </picture>
         </div>
         <div class="footer__textbox">
           <p class="footer__text">Branchify LLC - © 2024 All Rights Reserved | 3443 W Bavaria St Eagle, ID 83616</p>
