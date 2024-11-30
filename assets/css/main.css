@@ -47,7 +47,7 @@ h6 {
 p,
 li,
 div:not(:has(img)) {
-  font-size: 1.625rem;
+  font-size: 1.125rem;
   line-height: 1.77;
   letter-spacing: -0.01em;
 }
@@ -74,7 +74,7 @@ strong,
   font-weight: 700;
 }
 .main {
-  padding: 0 7.5625rem;
+  padding: 0 10%;
   max-width: 1440px;
   margin: 0 auto;
 }
